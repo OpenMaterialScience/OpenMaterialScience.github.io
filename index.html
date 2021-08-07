@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="This website is about Chemistry, Material science, Cheminformatics.">
+      <meta name="author" content="Mike Wang">
+      <meta name="keywords" content="Chemistry, Material science, Cheminformatics">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>OpenMaterialScience</title>
+      <style>
+        h1 {
+          text-align: center;
+          color: navy;
+        }
+        h2 {
+          text-align: left;
+          color: blue;
+        }
+        nav {
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      <a id="TOP"></a>
+      <h1>OpenMaterialScience</h1>
+
+      <nav>
+      </nav>
+
+      <section>
+        <hr>
+        <ul>
+          <li><a href="#1">1</a></li>
+          <li><a href="#2">2</a></li>
+          <li><a href="#3">3</a></li>
+        </ul>
+        <hr>
+      </section>
+
+      <div>
+        <a id="1"></a>
+        <h2>Title 2</h2>
+        <ul>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+        </ul>
+        <center><img src="" width=""></center>
+      </div>
+
+      <div>
+        <a id="2"></a>
+        <h2>Title 2</h2>
+        <ul>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+        </ul>
+        <center><img src="" width=""></center>
+      </div>
+
+      <div>
+        <a id="3"></a>
+        <h2>Title 2</h2>
+        <ul>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+          <li></li><br>
+        </ul>
+        <center><img src="" width=""></center>
+      </div>
+    </body>
+
+    <footer>
+      <center>
+        Comment (submitted by email)
+        <br>
+        <textarea id="userComment" rows="10" cols="50"></textarea>
+        <br><br>
+        <button onclick="sendEmail()" onsubmit="return false;">Submit</button>
+      </center>
+      <script>
+        function sendEmail() {
+            var link = "mailto:OpenMaterialScience@outlook.com"
+                     + "?cc="
+                     + "&subject=" + encodeURIComponent("Comment on OpenMaterialScience")
+                     + "&body=" + encodeURIComponent(document.getElementById('userComment').value)
+            ;
+
+            window.location.href = link;
+        }
+      </script>
+      
+      <hr>
+      <center><h3><a href="#TOP">TOP</a></h3></center>
+    </footer>
+</html>
